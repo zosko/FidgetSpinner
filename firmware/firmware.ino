@@ -88,47 +88,14 @@ void Sp() {
 
 void signal(int P1, int P2, int P3, int P4, int P5, int P6, int P7, int P8) {
 
-  if (P1 == 1) {
-    digitalWrite(LED1, HIGH);
-  }   else {
-    digitalWrite(LED1, LOW);
-  }
-  if (P2 == 1) {
-    digitalWrite(LED2, HIGH);
-  }   else {
-    digitalWrite(LED2, LOW);
-  }
-  if (P3 == 1) {
-    digitalWrite(LED3, HIGH);
-  }   else {
-    digitalWrite(LED3, LOW);
-  }
-  if (P4 == 1) {
-    digitalWrite(LED4, HIGH);
-  }   else {
-    digitalWrite(LED4, LOW);
-  }
-  if (P5 == 1) {
-    digitalWrite(LED5, HIGH);
-  }   else {
-    digitalWrite(LED5, LOW);
-  }
-  if (P6 == 1) {
-    digitalWrite(LED6, HIGH);
-  }   else {
-    digitalWrite(LED6, LOW);
-  }
-  if (P7 == 1) {
-    digitalWrite(LED7, HIGH);
-  }   else {
-    digitalWrite(LED7, LOW);
-  }
-  if (P8 == 1) {
-    digitalWrite(LED8, HIGH);
-  }   else {
-    digitalWrite(LED8, LOW);
-  }
+  digitalWrite(LED1, P1);
+  digitalWrite(LED2, P2);
+  digitalWrite(LED3, P3);
+  digitalWrite(LED4, P4);
+  digitalWrite(LED5, P5);
+  digitalWrite(LED6, P6);
+  digitalWrite(LED7, P7);
+  digitalWrite(LED8, P8);
 
   delay(1);
-
 }
